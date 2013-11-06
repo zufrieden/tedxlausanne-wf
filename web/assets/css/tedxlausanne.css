@@ -292,7 +292,7 @@ img {
   height: auto;
 }
 .img-rounded {
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .img-thumbnail {
   padding: 4px;
@@ -1716,15 +1716,15 @@ textarea.input-sm {
   height: auto;
 }
 .input-lg {
-  height: 45px;
-  padding: 10px 16px;
-  font-size: 18px;
+  height: 65px;
+  padding: 14px 36px;
+  font-size: 27px;
   line-height: 1.33;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 select.input-lg {
-  height: 45px;
-  line-height: 45px;
+  height: 65px;
+  line-height: 65px;
 }
 textarea.input-lg {
   height: auto;
@@ -2177,10 +2177,10 @@ fieldset[disabled] .btn-link:focus {
   text-decoration: none;
 }
 .btn-lg {
-  padding: 10px 16px;
-  font-size: 18px;
+  padding: 14px 36px;
+  font-size: 27px;
   line-height: 1.33;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .btn-sm,
 .btn-xs {
@@ -3104,10 +3104,10 @@ input[type="button"].btn-block {
   border-radius: 0px;
 }
 .btn-group-lg > .btn {
-  padding: 10px 16px;
-  font-size: 18px;
+  padding: 14px 36px;
+  font-size: 27px;
   line-height: 1.33;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .btn-group > .btn + .dropdown-toggle {
   padding-left: 8px;
@@ -3233,17 +3233,17 @@ input[type="button"].btn-block {
 .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
-  height: 45px;
-  padding: 10px 16px;
-  font-size: 18px;
+  height: 65px;
+  padding: 14px 36px;
+  font-size: 27px;
   line-height: 1.33;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 select.input-group-lg > .form-control,
 select.input-group-lg > .input-group-addon,
 select.input-group-lg > .input-group-btn > .btn {
-  height: 45px;
-  line-height: 45px;
+  height: 65px;
+  line-height: 65px;
 }
 textarea.input-group-lg > .form-control,
 textarea.input-group-lg > .input-group-addon,
@@ -3303,9 +3303,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
   border-radius: 0px;
 }
 .input-group-addon.input-lg {
-  padding: 10px 16px;
-  font-size: 18px;
-  border-radius: 10px;
+  padding: 14px 36px;
+  font-size: 27px;
+  border-radius: 0px;
 }
 .input-group-addon input[type="radio"],
 .input-group-addon input[type="checkbox"] {
@@ -3760,7 +3760,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .navbar-brand {
   float: left;
   padding: 15px 15px;
-  font-size: 18px;
+  font-size: 27px;
   line-height: 20px;
 }
 .navbar-brand:hover,
@@ -4205,18 +4205,18 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 .pagination-lg > li > a,
 .pagination-lg > li > span {
-  padding: 10px 16px;
-  font-size: 18px;
+  padding: 14px 36px;
+  font-size: 27px;
 }
 .pagination-lg > li:first-child > a,
 .pagination-lg > li:first-child > span {
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
 .pagination-lg > li:last-child > a,
 .pagination-lg > li:last-child > span {
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .pagination-sm > li > a,
 .pagination-sm > li > span {
@@ -4410,7 +4410,7 @@ a.list-group-item.active > .badge,
   line-height: 1.4;
 }
 .container .jumbotron {
-  border-radius: 10px;
+  border-radius: 0px;
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
@@ -4989,7 +4989,7 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 .well-lg {
   padding: 24px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 .well-sm {
   padding: 9px;
@@ -5563,4 +5563,7 @@ h6 {
 /* LINK */
 p {
   line-height: 1.6em;
+}
+footer {
+  background-color: #ddd;
 }

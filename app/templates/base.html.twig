@@ -5,7 +5,7 @@
         {% block head %}
         <meta name="author" content="Antistatique.net">
         <link rel="stylesheet" href="assets/css/tedxlausanne.css" />
-        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>{% block title %}{% endblock %}</title>
         {% endblock %}
@@ -26,7 +26,7 @@
     </div>
     <div class="row">
       <div class="col-xs-12">
-        <nav class="navbar navbar-default" role="navigation">
+        <nav class="navbar navbar-inverse" role="navigation">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -71,78 +71,45 @@
 {% endblock %}
 
 {% block footer %}
-<div class="container">
-    <div class="isolated">
-        <div class="row">
-            <div class="col-xs-12">
-                <hr>
-            </div>
-        </div>
-    </div>
-</div>
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-xs-12">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h3 class="text-right"><span class="icon icon-rounded-box icon-inbox"></span></h3>
-                    </div>
-                    <div class="col-xs-9">
-                        <h3 class="title-rounded-icon">Newsletter</h3>
-                        <p>
-                            
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h3 class="text-right"><span class="icon icon-rounded-box icon-comment"></span></h3>
-                    </div>
-                    <div class="col-xs-9">
-                        <h3 class="title-rounded-icon">Networks</h3>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h3 class="text-right"><span class="icon icon-rounded-box icon-envelope"></span></h3>
-                    </div>
-                    <div class="col-xs-9">
-                        <h3 class="title-rounded-icon">Email</h3>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-xs-12">
-                <div class="row">
-                    <div class="col-xs-3">
-                        <h3 class="text-right"><span class="icon icon-rounded-box icon-download"></span> </h3>
-                    </div>
-                    <div class="col-xs-9">
-                        <h3 class="title-rounded-icon">Sponsor kit</h3>
-
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="isolated">
-            <div class="row">
-                <div class="col-xs-12">
-                    <hr>
+          <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <h3>Interact</h3>
+                  <ul class="nav nav-pills">
+                    <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+                    <li><a href="#"><i class="fa fa-rocket"></i> blog</a></li>
+                  </ul>
                 </div>
-            </div>
-        </div>
-        <div class="row">
+                <div class="col-sm-12 col-md-4">
+                  <h3>Get involved</h3>
+                  <p>Current job openings You need me, and you don’t know it</p>
+                </div>
+                <div class="col-sm-12 col-md-4">
+                  <h3>Keep informed</h3>
+
+                  <form class="form-inline" role="form">
+                    <div class="form-group">
+                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-default">Subscribe</button>
+                  </form>
+
+                </div>
+          </div>
+          <div class="row">
             <div class="col-xs-12">
                 <div id="copyright" class="text-center isolated">
                     <h5>&copy; 2013-2014 <a href="http://www.tedxlausanne.org" target="_blank">TEDx Lausanne</a></h5>
                 </div>
             </div>
+          </div>
         </div>
     </div>
 </footer>
