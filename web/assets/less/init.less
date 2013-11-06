@@ -1,0 +1,13 @@
+/* Mixins */
+.font-size(@sizeValue) {
+  @remValue: (@sizeValue/10);
+  @pxValue: (@sizeValue);
+  font-size: ~"@{pxValue}px"; 
+  font-size: ~"@{remValue}rem";
+}
+
+
+.isolated{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

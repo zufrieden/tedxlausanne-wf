@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        {% block head %}
+        <meta name="author" content="Antistatique.net">
+        <link rel="stylesheet" href="assets/css/tedxlausanne.css" />
+        <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{% endblock %}</title>
+        {% endblock %}
+    </head>
+<body>
+
+{% block header %}
+
+ <div class="container">
+    <div class="row">
+      <div class="col-xs-8"><h1>TEDx Lausanne</h1></div>
+      <div class="col-xs-4">
+        <ul class="nav nav-pills pull-right isolated">
+          <li class="active"><a href="#">EN</a></li>
+          <li><a href="#">FR</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12">
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand visible-xs" href="#">Menu</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">TEDx Lausanne 2014</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Past events</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Watch</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Press</a></li>
+              <li><a href="#">Contact</a></li>
+              
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </nav>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block body %}
+
+
+
+{% endblock %}
+
+{% block footer %}
+<div class="container">
+    <div class="isolated">
+        <div class="row">
+            <div class="col-xs-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h3 class="text-right"><span class="icon icon-rounded-box icon-inbox"></span></h3>
+                    </div>
+                    <div class="col-xs-9">
+                        <h3 class="title-rounded-icon">Newsletter</h3>
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h3 class="text-right"><span class="icon icon-rounded-box icon-comment"></span></h3>
+                    </div>
+                    <div class="col-xs-9">
+                        <h3 class="title-rounded-icon">Networks</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h3 class="text-right"><span class="icon icon-rounded-box icon-envelope"></span></h3>
+                    </div>
+                    <div class="col-xs-9">
+                        <h3 class="title-rounded-icon">Email</h3>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <h3 class="text-right"><span class="icon icon-rounded-box icon-download"></span> </h3>
+                    </div>
+                    <div class="col-xs-9">
+                        <h3 class="title-rounded-icon">Sponsor kit</h3>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="isolated">
+            <div class="row">
+                <div class="col-xs-12">
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="copyright" class="text-center isolated">
+                    <h5>&copy; 2013-2014 <a href="http://www.tedxlausanne.org" target="_blank">TEDx Lausanne</a></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+{% endblock %}
+
+</div>
+<!--/#inner-wrap-->
+</div>
+<!--/#outer-wrap-->
+
+    {% block footerscript %}
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    {% endblock %}
+    
+</body>
+</html>
