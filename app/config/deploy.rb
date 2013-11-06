@@ -6,7 +6,7 @@ set :scm,         :git
 # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
 set :deploy_to,   "/home/mfh/www/tedxlausanne.zufrieden.io/"
-set :user,        "uxlausanne"
+set :user,        "mfh"
 set :domain,      "antistatique"
 set :use_sudo,    false
 
