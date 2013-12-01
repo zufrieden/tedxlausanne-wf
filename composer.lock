@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "7db5c5e553454c69ac2253098ccdd66b",
+    "hash": "d9b7df901bd67879db8fa9e7a9e6a77c",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -981,21 +981,20 @@
         },
         {
             "name": "symfony/icu",
-            "version": "v1.2.0",
+            "version": "v1.0.0",
             "target-dir": "Symfony/Component/Icu",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Icu.git",
-                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72"
+                "reference": "cac3fdfb111adbe590155f491594636d45129783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Icu/zipball/7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
-                "reference": "7299cd3d8d6602103d1ebff5d0a9917b7bc6de72",
+                "url": "https://api.github.com/repos/symfony/Icu/zipball/cac3fdfb111adbe590155f491594636d45129783",
+                "reference": "cac3fdfb111adbe590155f491594636d45129783",
                 "shasum": ""
             },
             "require": {
-                "lib-icu": ">=4.4",
                 "php": ">=5.3.3",
                 "symfony/intl": "~2.3"
             },
@@ -1025,7 +1024,7 @@
                 "icu",
                 "intl"
             ],
-            "time": "2013-06-03 18:32:58"
+            "time": "2013-06-03 18:32:07"
         },
         {
             "name": "symfony/intl",
@@ -1775,12 +1774,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "fa710fdb09e49511fd3d22c50f87d17ff5939e8a"
+                "reference": "556d6cef3e1e5b9b6aeef42fb44d2eafcf2f38a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/fa710fdb09e49511fd3d22c50f87d17ff5939e8a",
-                "reference": "fa710fdb09e49511fd3d22c50f87d17ff5939e8a",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/556d6cef3e1e5b9b6aeef42fb44d2eafcf2f38a7",
+                "reference": "556d6cef3e1e5b9b6aeef42fb44d2eafcf2f38a7",
                 "shasum": ""
             },
             "type": "library",
@@ -1809,7 +1808,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-11-25 19:54:46"
+            "time": "2013-12-01 08:20:47"
         }
     ],
     "packages-dev": [
