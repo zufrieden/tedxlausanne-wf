@@ -49,7 +49,7 @@ end
 
 
 
-set  :keep_releases,  3
+# set  :keep_releases,  3
 
 after "deploy:update_code", "myproject:vendors"
 # after "deploy:create_symlink", "myproject:move_fonts"
