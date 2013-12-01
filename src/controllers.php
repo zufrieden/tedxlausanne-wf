@@ -19,7 +19,7 @@ $app->get('/', function () use ($app) {
 $app->get('/events', function () use ($app) {
     return $app['twig']->render('events.html.twig', array());
 })
-->bind('events')
+->bind('events');
 $app->get('/events/tedxlausanne2014', function () use ($app) {
     return $app['twig']->render('event2014.html.twig', array());
 })
