@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "a9a77199eae5aa66c35c525eac50fd99",
+    "hash": "7db5c5e553454c69ac2253098ccdd66b",
     "packages": [
         {
             "name": "monolog/monolog",
@@ -1775,12 +1775,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "556d6cef3e1e5b9b6aeef42fb44d2eafcf2f38a7"
+                "reference": "fa710fdb09e49511fd3d22c50f87d17ff5939e8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/556d6cef3e1e5b9b6aeef42fb44d2eafcf2f38a7",
-                "reference": "556d6cef3e1e5b9b6aeef42fb44d2eafcf2f38a7",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/fa710fdb09e49511fd3d22c50f87d17ff5939e8a",
+                "reference": "fa710fdb09e49511fd3d22c50f87d17ff5939e8a",
                 "shasum": ""
             },
             "type": "library",
@@ -1809,7 +1809,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-12-01 08:20:47"
+            "time": "2013-11-25 19:54:46"
         }
     ],
     "packages-dev": [
@@ -1822,9 +1822,9 @@
     "stability-flags": {
         "twitter/bootstrap": 20
     },
-    "platform": [
-
-    ],
+    "platform": {
+        "php": ">=5.3.3"
+    },
     "platform-dev": [
 
     ]
