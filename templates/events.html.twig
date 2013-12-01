@@ -1,8 +1,112 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Events{% endblock %}
+{% block title %}Events – TEDx Lausanne{% endblock %}
 
-{% block body %}
+{% block page_title %}TEDx Lausanne events{% endblock %}
+
+{% block breadcrumb %}
+<li class="active">All events</li>
+{% endblock %}
+
+{% block content %}
+
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+
+                <h2>The essence of TEDx in Lausanne</h2>
+                <p>
+                    The goal of TEDx Lausanne is to shift the focus from idea generation to idea execution. To accomplish this, we bring together some of the world's most productive creative visionaries and leading researchers to share pragmatic insights on how ideas are brought to life.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="isolated"></div>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Next event</h2>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well">
+                <h3><a href="{{ path('event2014') }}">TEDx Lausanne 2014</a></h3>
+                <p>
+                    <strong>10 February 2014</strong><br/>
+                    UNIL | Université de Lausanne
+                </p>
+
+                <p>
+                    "perpetual (r)evolution”, will feature carefully selected speakers who will take you on a journey from which you’ll emerge inspired, stimulated and ready to catch your next opportunity for (r)evolution.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<hr/>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Past events</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well">
+                <h3><a href="{{ path('event2014') }}">TEDxLausanneChange 2013</a></h3>
+                <p>
+                    <strong>10 February 2013</strong><br/>
+                    UNIL | Université de Lausanne
+                </p>
+
+                <p>
+                    All of us have been in the situation where we see an issue or problem that demands attention and ask, “Why isn’t anybody doing anything?” At other times, people around us are acting in questionable ways that merit greater reflection, and we step back and ask, “Is this really the right thing to do?”
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well">
+                <h3><a href="{{ path('event2014') }}">TEDxLausanne 2013 – What if we do(n’t)?</a></h3>
+                <p>
+                    <strong>10 February 2013</strong><br/>
+                    UNIL | Université de Lausanne
+                </p>
+
+                <p>
+                    All of us have been in the situation where we see an issue or problem that demands attention and ask, “Why isn’t anybody doing anything?” At other times, people around us are acting in questionable ways that merit greater reflection, and we step back and ask, “Is this really the right thing to do?”
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="well">
+                <h3><a href="{{ path('event2014') }}">TEDxLausanne 2012 – The future doesn’t just happen</a></h3>
+                <p>
+                    <strong>10 February 2012</strong><br/>
+                    UNIL | Université de Lausanne
+                </p>
+
+                <p>
+                    People all over the world are shaping and influencing our lives, sometimes in ways we never imagined. Many are focused on creating a better future for our planet. Who are these people? What can we learn from them?That’s what we wanted to find out
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
 
 
 {% endblock %}

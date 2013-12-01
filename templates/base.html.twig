@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        {% block head %}
-        <meta name="author" content="Antistatique.net">
-        <link rel="stylesheet" href="/assets/css/tedxlausanne.css" />
-        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{% block title %}{% endblock %}</title>
-        {% endblock %}
-    </head>
+<head>
+  <meta charset="utf-8">
+  {% block head %}
+  <meta name="author" content="Antistatique.net">
+  <link rel="stylesheet" href="/assets/css/tedxlausanne.css" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}{% endblock %}</title>
+  {% endblock %}
+</head>
 <body>
 
-{% block header %}
+  {% block header %}
 
- <div class="container">
+  <div class="container">
     <div class="row">
-      <div class="col-xs-8"><h1>TEDx Lausanne</h1></div>
+      <div class="col-xs-8"><h1><a href="{{ path('homepage') }}">TEDx Lausanne</a></h1></div>
       <div class="col-xs-4">
         <ul class="nav nav-pills pull-right isolated">
           <li class="active"><a href="#">EN</a></li>
@@ -44,9 +44,9 @@
               <li class="dropdown">
                 <a href="{{ path('events') }}" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
                 <ul class="dropdown-menu">
-                  <li><a href="#">TEDx Lausanne 2014</a></li>
+                  <li><a href="{{ path('event2014') }}">TEDx Lausanne 2014</a></li>
                   <li class="divider"></li>
-                  <li><a href="{{ path('events') }}">Past events</a></li>
+                  <li><a href="{{ path('events') }}">All events</a></li>
                 </ul>
               </li>
               <li><a href="#">Watch</a></li>
@@ -62,65 +62,100 @@
     </div>
   </div>
 
-{% endblock %}
+  {% endblock %}
 
-{% block body %}
+  {% block body %}
+
+  {% block breadcrumb_container %}
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ol class="breadcrumb">
+          <li><a href="{{ path('homepage') }}">Home</a></li>
+          {% block breadcrumb %}{% endblock %}
+        </ol>
+      </div>
+    </div>
+  </div>
+  {% endblock %}
+
+  {% block section_title %}{% endblock %}
+
+  {% block subnav %}
+  
+  {% endblock %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>{% block page_title %}{% endblock %}</h1>
+      </div>
+    </div>
+  </div>
+  {% block content %}
+
+  {% endblock %}
 
 
 
-{% endblock %}
+  {% endblock %}
 
-{% block footer %}
-<footer>
+  {% block footer %}
+  <footer>
     <div class="container">
-        <div class="isolated">
-          <div class="row">
-                <div class="col-sm-12 col-md-4">
-                  <h3>Interact</h3>
-                  <ul class="nav nav-pills">
-                    <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
-                    <li><a href="#"><i class="fa fa-rocket"></i> blog</a></li>
-                  </ul>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                  <h3>Get involved</h3>
-                  <p>Current job openings You need me, and you don’t know it</p>
-                </div>
-                <div class="col-sm-12 col-md-4">
-                  <h3>Keep informed</h3>
-
-                  <form class="form-inline" role="form">
-                    <div class="form-group">
-                      <label class="sr-only" for="exampleInputEmail2">Email address</label>
-                      <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-                    </div>
-                    <button type="submit" class="btn btn-default">Subscribe</button>
-                  </form>
-
-                </div>
+      <div class="isolated">
+        <div class="row">
+          <div class="col-sm-12 col-md-4">
+            <h3>Interact</h3>
+            <ul class="nav nav-pills">
+              <li><a href="#"><i class="fa fa-twitter-square"></i> Twitter</a></li>
+              <li><a href="#"><i class="fa fa-facebook-square"></i> Facebook</a></li>
+              <li><a href="#"><i class="fa fa-linkedin-square"></i> LinkedIn</a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+              <li><a href="#"><i class="fa fa-youtube"></i> Youtube</a></li>
+              <li><a href="#"><i class="fa fa-rocket"></i> blog</a></li>
+            </ul>
           </div>
-          <div class="row">
-            <div class="col-xs-12">
-                <div id="copyright" class="text-center isolated">
-                    <h5>&copy; 2013-2014 <a href="http://www.tedxlausanne.org" target="_blank">TEDx Lausanne</a></h5>
-                </div>
+          <div class="col-sm-12 col-md-4">
+            <h3>Get involved</h3>
+            <p>Current job openings You need me, and you don’t know it</p>
+            <ul>
+              <li><a href="#">Become a speaker</a></li>
+              <li><a href="#">Join the team</a></li>
+              <li><a href="#">Become a TEDxLausanne partner</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-4">
+            <h3>Keep informed</h3>
+
+            <form class="form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+              </div>
+              <button type="submit" class="btn btn-default">Subscribe</button>
+            </form>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div id="copyright" class="text-center isolated">
+              <h5>&copy; 2013-2014 <a href="http://www.tedxlausanne.org" target="_blank">TEDx Lausanne</a></h5>
             </div>
           </div>
         </div>
+      </div>
     </div>
-</footer>
-{% endblock %}
+  </footer>
+  {% endblock %}
 
 
-    {% block footerscript %}
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="/assets/js/bootstrap.min.js"></script>
+  {% block footerscript %}
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="/assets/js/bootstrap.min.js"></script>
 
-    {% endblock %}
-    
+  {% endblock %}
+
 </body>
 </html>

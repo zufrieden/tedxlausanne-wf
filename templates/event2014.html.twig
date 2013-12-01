@@ -1,0 +1,111 @@
+{% extends "base.html.twig" %}
+
+{% block title %}TEDx Lausanne 2014{% endblock %}
+
+{% block breadcrumb %}
+<li><a href="{{ path("events") }}">All events</a></li>
+<li class="current">TEDx Lausanne 2014</li>
+{% endblock %}
+
+{% block section_title %}
+<div class="jumbotron" style="padding-bottom:0;padding-top:0px;">
+    <div class="container">
+        <div class="row isolated">
+            <div class="col-xs-12">
+                <h2>TEDx Lausanne 2014</h2>
+                <p>
+                    <strong>10 February 2014</strong><br/>
+                    UNIL | Université de Lausanne
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <ul class="nav nav-tabs">
+                    <li{% block overview_active %} class="active"{% endblock %}><a href="{{ path("event2014") }}">Overview</a></li>
+                    <li{% block speakers_active %}{% endblock %}><a href="{{ path("event2014-speakers") }}">Speakers</a></li>
+                    <li{% block venue_active %}{% endblock %}><a href="{{ path("event2014-venue") }}">Venue</a></li>
+                    <li class="pull-right"><a href="#" class="btn btn-primary">Register now</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            {% block detail_infos %}
+            <h4>"perpetual (r)evolution”, will feature carefully selected speakers who will take you on a journey from which you’ll emerge inspired, stimulated and ready to catch your next opportunity for (r)evolution.</h4>
+            <hr>
+            <h3>Featured speakers</h3>
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="http://lorempixel.com/g/300/300/people/1" alt="">
+                        <div class="caption">
+                            <h4>Ben Bryant</h4>
+                            <p>Beyond focussing and towards noticing</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="http://lorempixel.com/g/300/300/people/2" alt="">
+                        <div class="caption">
+                            <h4>Uri Alon</h4>
+                            <p>Together into the Unknown: What science can learn from improvisation theatre</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix visible-xs"></div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                        <div class="caption">
+                            <h4>Valérie Issumo</h4>
+                            <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <a href="#" class="thumbnail">
+                        <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                        <div class="caption">
+                            <h4>Valérie Issumo</h4>
+                            <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="{{ path("event2014-speakers") }}">View all speakers</a>
+                </div>
+            </div>
+            <div class="isolated"></div>
+            {% endblock %}
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="panel panel-default">
+                {# <div class="panel-heading">Useful infos</div> #}
+                <div class="panel-body">
+                    <h3>Date</h3>
+                    <p>10 February 2014<br/>
+                        
+                    </p>
+                    <h3>Venue</h3>
+                    <p><strong>UNIL | Université de Lausanne</strong><br/>
+                        Quartier UNIL-Sorge<br/>Université de Lausanne<br/>1015 Lausanne<br/>
+                        <a href="#">get directions</a>
+                    </p>
+                    <h3>Registration</h3>
+                    <p><a href="#">Register online</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
