@@ -1,15 +1,10 @@
 <?php
 
-require_once '../vendor/autoload.php';
+ini_set('display_errors', 0);
 
-$loader = new Twig_Loader_String();
-$loader = new Twig_Loader_Filesystem('../app/templates');
+require_once __DIR__.'/../vendor/autoload.php';
 
-$twig = new Twig_Environment($loader);
-
-// @todo add cache
-// $twig = new Twig_Environment($loader, array(
-//     'cache' => '../app/cache',
-// ));
-
-echo $twig->render('index.html.twig');
+$app = require __DIR__.'/../src/app.php';
+require __DIR__.'/../config/prod.php';
+require __DIR__.'/../src/controllers.php';
+$app->run();
