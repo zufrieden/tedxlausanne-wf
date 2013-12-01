@@ -16,10 +16,10 @@ $app->get('/', function () use ($app) {
 ->bind('homepage')
 ;
 
-$app->get('/licences', function () use ($app) {
-    return $app['twig']->render('licences.html.twig', array());
+$app->get('/events', function () use ($app) {
+    return $app['twig']->render('events.html.twig', array());
 })
-->bind('licences')
+->bind('events')
 ;
 
 
