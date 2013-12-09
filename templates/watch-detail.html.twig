@@ -1,0 +1,58 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Talks and speakers – TEDx Lausanne{% endblock %}
+
+{% block page_title %}
+Uri Alon Talk
+{% endblock %}
+
+{% block breadcrumb %}
+<li><a href="{{ path('watch') }}">Videos</a></li>
+<li class="active">Uri Alon Talk</li>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <h3>
+                <span class="label label-danger">TEDxLausanne 2013</span>
+                <span class="label label-danger">Inspiring</span>
+            </h3>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <a href="#" class="btn btn-primary pull-right">Share ++</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6">
+            <h2>
+                Together into the Unknown: What science can learn from improvisation theatre
+            </h2>
+            <p>
+                Uri Alon is a unique scientist. After contributing game-changing ideas to the fields of network analysis and systems biology, he focused on another type of change: the way we do science. He spread his ideas about empathy in science to the highest echelons of scientific institutions around the world using simple black-board lectures and his guitar. He calls upon scientists to form peer groups to support one another and to change the culture of science at their institution.
+            </p>
+            <p>
+                The moment you are deepest in the cloud of confusion is when you are closest to discovery. However, scientific method is typically taught as a completely rational process with clear steps from question to answer. To teach ourselves about being creative in the cloud of confusion, we can learn from a completely different field : improvisation theatre.  Uri speaks about his journey through science and what he learned about doing science from his experience as an improvisation theatre actor.
+            </p>
+            <hr>
+            <h4>More information</h4>
+            <ul>
+                <li><a href="#">Uri Alon’s Molecular Cell Biology Lab</a></li>
+                <li><a href="#">An introduction to Systems Biology: Design principles of Biological circuits”</a></li>
+                <li><a href="#">How to choose a good scientific problem</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+            <div class="well">
+                <iframe width="100%" height="360" src="//www.youtube.com/embed/RVoz_pEeV8I" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

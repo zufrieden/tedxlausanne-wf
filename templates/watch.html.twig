@@ -1,0 +1,327 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Talks and speakers – TEDx Lausanne{% endblock %}
+
+{% block page_title %}Watch TEDxLausanne <i class="fa fa-youtube-play"></i> videos{% endblock %}
+
+{% block breadcrumb %}
+<li class="active">Videos</li>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>
+                Speaker and talk
+            </h2>
+            <p>We need a text for this section presenting some of TEDx Lausanne best talks</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+          <!-- Brand and toggle get grouped for better mobile display -->
+        {#   <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Filter</a>
+          </div> #}
+            <nav class="navbar navbar-default" role="navigation">
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-left">
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">TEDxLausanne editions <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">TEDxLausanne 2013</a></li>
+                      <li><a href="#">TEDxLausanneChange 2013</a></li>
+                      <li><a href="#">TEDxLausanne 2012</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#">All videos</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                  </div>
+                  <button type="submit" class="btn btn-default">Search</button>
+                </form>
+              </div><!-- /.navbar-collapse -->
+            </nav>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/1" alt="">
+                <div class="caption">
+                    <h4>Ben Bryant</h4>
+                    <p>Beyond focussing and towards noticing</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/2" alt="">
+                <div class="caption">
+                    <h4>Uri Alon</h4>
+                    <p>Together into the Unknown: What science can learn from improvisation theatre</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                <div class="caption">
+                    <h4>Valérie Issumo</h4>
+                    <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/4" alt="">
+                <div class="caption">
+                    <h4>Jenna and Renatus</h4>
+                    <p>SparksTraining, Ignite your spark</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                <div class="caption">
+                    <h4>Valérie Issumo</h4>
+                    <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/4" alt="">
+                <div class="caption">
+                    <h4>Jenna and Renatus</h4>
+                    <p>SparksTraining, Ignite your spark</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/1" alt="">
+                <div class="caption">
+                    <h4>Ben Bryant</h4>
+                    <p>Beyond focussing and towards noticing</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/2" alt="">
+                <div class="caption">
+                    <h4>Uri Alon</h4>
+                    <p>Together into the Unknown: What science can learn from improvisation theatre</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                <div class="caption">
+                    <h4>Valérie Issumo</h4>
+                    <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/4" alt="">
+                <div class="caption">
+                    <h4>Jenna and Renatus</h4>
+                    <p>SparksTraining, Ignite your spark</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                <div class="caption">
+                    <h4>Valérie Issumo</h4>
+                    <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/4" alt="">
+                <div class="caption">
+                    <h4>Jenna and Renatus</h4>
+                    <p>SparksTraining, Ignite your spark</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/1" alt="">
+                <div class="caption">
+                    <h4>Ben Bryant</h4>
+                    <p>Beyond focussing and towards noticing</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/2" alt="">
+                <div class="caption">
+                    <h4>Uri Alon</h4>
+                    <p>Together into the Unknown: What science can learn from improvisation theatre</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                <div class="caption">
+                    <h4>Valérie Issumo</h4>
+                    <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-sm"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/4" alt="">
+                <div class="caption">
+                    <h4>Jenna and Renatus</h4>
+                    <p>SparksTraining, Ignite your spark</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="clearfix visible-xs"></div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/3" alt="">
+                <div class="caption">
+                    <h4>Valérie Issumo</h4>
+                    <p>Wastewater: a resource or a weapon of mass destruction?</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+        <div class="col-xs-6 col-sm-4 col-md-2">
+            <a href="{{ path('video-detail') }}" class="thumbnail">
+                <img src="http://lorempixel.com/g/300/300/people/4" alt="">
+                <div class="caption">
+                    <h4>Jenna and Renatus</h4>
+                    <p>SparksTraining, Ignite your spark</p>
+                    <p>
+                        <span class="label label-danger">TEDxLausanne 2013</span>
+                        <span class="label label-danger">Inspiring</span>
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="text-center">
+                <ul class="pagination">
+                  <li><a href="#">&laquo;</a></li>
+                  <li><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">5</a></li>
+                  <li><a href="#">&raquo;</a></li>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+{% endblock %}

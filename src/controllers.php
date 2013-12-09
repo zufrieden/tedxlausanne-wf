@@ -12,26 +12,35 @@ use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 $app->get('/', function () use ($app) {
     return $app['twig']->render('index.html.twig', array());
-})
-->bind('homepage');
+})->bind('homepage');
+
 
 // EVENTs
 $app->get('/events', function () use ($app) {
     return $app['twig']->render('events.html.twig', array());
-})
-->bind('events');
+})->bind('events');
+
 $app->get('/events/tedxlausanne2014', function () use ($app) {
     return $app['twig']->render('event2014.html.twig', array());
-})
-->bind('event2014');
+})->bind('event2014');
+
 $app->get('/events/tedxlausanne2014/speakers', function () use ($app) {
     return $app['twig']->render('event2014-speakers.html.twig', array());
-})
-->bind('event2014-speakers');
+})->bind('event2014-speakers');
+
 $app->get('/events/tedxlausanne2014/venue', function () use ($app) {
     return $app['twig']->render('event2014-venue.html.twig', array());
-})
-->bind('event2014-venue');
+})->bind('event2014-venue');
+
+
+// WATCH
+$app->get('/watch', function () use ($app) {
+    return $app['twig']->render('watch.html.twig', array());
+})->bind('watch');
+$app->get('/watch/detail', function () use ($app) {
+    return $app['twig']->render('watch-detail.html.twig', array());
+})->bind('video-detail');
+
 
 
 
